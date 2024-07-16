@@ -18,7 +18,6 @@ public class Office {
     private long id;
     private String country;
     private String city;
-    private String phone;
     private String address;
     @OneToMany(mappedBy="office", cascade=CascadeType.REMOVE)
     private List<Employee> employees;
