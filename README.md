@@ -1,16 +1,16 @@
 # Описание таблиц в БД
 Office:
-  id,
-  country,
-  city,
-  address
+  -id (PK),
+  -country,
+  -city,
+  -address
 
 Employee:
-  id,
-  firstname,
-  lastname,
-  email,
-  office_id
+  -id (PK),
+  -firstname,
+  -lastname,
+  -email,
+  -office_id (FK)
 
 Таблица Employee связана с таблицей Office в отношении many-to-one
 
