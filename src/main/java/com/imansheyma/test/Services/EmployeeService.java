@@ -8,5 +8,6 @@ public interface EmployeeService {
     public Employee save(Employee employee);
     public void delete(Long id);
     public List<Employee> readAll();
+    public List<Employee> readAllByOfficeId(Long id);
     public Employee readById(Long id);
 }

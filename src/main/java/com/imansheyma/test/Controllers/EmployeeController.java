@@ -31,6 +31,11 @@ public class EmployeeController {
         return new ResponseEntity<> (employeeService.readAll(), HttpStatus.OK);
     }
 
+    @GetMapping("/office/{office_id}")
+    public ResponseEntity<List<Employee>> getAllEmployeesByOfficeId(@PathVariable("office_id") Long officeId){
+        return new ResponseEntity<> (employeeService.readAllByOfficeId(officeId), HttpStatus.OK);
+    }
+
 
     @GetMapping("/{id}") 
     public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") Long id){

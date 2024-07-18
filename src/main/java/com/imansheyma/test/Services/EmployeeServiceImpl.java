@@ -38,4 +38,9 @@ public class EmployeeServiceImpl implements EmployeeService{
         return employee;
     }
 
+    @Override
+    public List<Employee> readAllByOfficeId(Long id) {
+        return employeeRepository.findAllByOfficeId(id);
+    }
+
 }
