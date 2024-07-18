@@ -1,9 +1,9 @@
 # Описание таблиц в БД
 Office:
-  -id (PK),
-  -country,
-  -city,
-  -address
+-id (PK),
+-country,
+-city,
+-address
 
 Employee:
   -id (PK),
