@@ -47,8 +47,8 @@ public class OfficeController {
         return new ResponseEntity<> (officeService.save(office), HttpStatus.OK);
     }
 
-    @DeleteMapping("/")
-    public ResponseEntity<String> deleteOfficies(@RequestBody Long id) {
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteOfficies(@PathVariable Long id) {
         officeService.delete(id);
         return ResponseEntity.ok("");
     }
